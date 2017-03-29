@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 
 export default class Login extends React.Component {
@@ -15,14 +15,14 @@ export default class Login extends React.Component {
     let email = this.refs.email.value.trim();
     let password = this.refs.password.value.trim();
 
-    Meteor.loginWithPassword({ email }, password, (err) => {
+    Meteor.loginWithPassword({email}, password, (err) => {
       console.log('Login callback', err);
     });
   }
   render() {
     return (
       <div>
-        <h1>Short Link</h1>
+        <h1>Short Lnk</h1>
 
         {this.state.error ? <p>{this.state.error}</p> : undefined}
 
