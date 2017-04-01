@@ -16,7 +16,7 @@ Meteor.startup(() => {
             res.setHeader('Location', link.url);
             res.end();
         } else {
-            next()
+            next();
         }
     });
 });
