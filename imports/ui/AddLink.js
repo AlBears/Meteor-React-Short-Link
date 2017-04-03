@@ -19,7 +19,6 @@ export default class AddLink extends React.Component {
           this.setState({ url: '' });
         }
       });
-      this.refs.url.value = '';
     }
   }
   onChange(e) {
