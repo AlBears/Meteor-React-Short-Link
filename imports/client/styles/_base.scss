@@ -21,9 +21,13 @@ a {
   color: black;
 }
 
+p {
+  margin-bottom: $space;
+}
+
 input[type=text], input[type=email], input[type=password] {
   border: 1px solid $input-border;
   font-size: $base-font-size;
   margin-bottom: $space;
-  padding: 1rem;
+  padding: $input-spacing;
 }
