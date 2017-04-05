@@ -27,7 +27,7 @@ const Link = new SimpleSchema({
     min: 0
   },
   lastVisitedAt: {
-    type: String,
+    type: Number,
     optional: true
   },
 });
